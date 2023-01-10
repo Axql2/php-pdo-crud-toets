@@ -49,18 +49,15 @@ foreach($result as $info) {
 
 ?>
   <h3>De vijf duurste auto's ter wereld</h3>
-    <a href="index.php">
-        <input type="button" value="Maak een nieuw record">
-    </a>
 
 <br><br>
 <table border='1'>
     <thead>
-        <th>Voornaam</th>
-        <th>Tussenvoegsel</th>
-        <th>Achternaam</th>`
-        <th>Delete</th>
-        <th>Edit</th>
+        <th>Id</th>
+        <th>Merk</th>
+        <th>Model</th>`
+        <th>Topsnelheid</th>
+        <th>Prijs</th>
     </thead>
     <tbody>
         <?php echo $tableRows; ?>
