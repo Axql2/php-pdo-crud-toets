@@ -1,8 +1,13 @@
 <?php
-$dsn = "mysql:host=localhost;dbname=php-pdo-crud-toets;charset=UTF8";
+
+echo "test";
+
+include('config.php');
+
+$dsn = "mysql:host=$dbHost;dbname=$dbName;charset=UTF8";
 
 try {
-    $pdo = new PDO($dsn, "root", "");
+    $pdo = new PDO($dsn, $dbUser, $dbPass);
     if ($pdo) {
         echo "Er is een verbinding met de mysql server";
     } else {
@@ -11,8 +16,6 @@ try {
 } catch(PDOException $e) {
     echo $e->getMessage();
 }
-
-
 
 
 
